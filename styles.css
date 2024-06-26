@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    color: #666;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    position: relative;
+}
+
+.steps::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    height: 4px;
+    background-color: #ddd;
+    z-index: -1;
+}
+
+.step {
+    width: 30%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.step:hover {
+    background-color: #f0f0f0;
+}
+
+.step-number {
+    background-color: #6a1b9a;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 18px;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease;
+}
+
+.step:hover .step-number {
+    transform: rotate(360deg);
+}
+
+.step:nth-child(2) .step-number {
+    background-color: #ff7043;
+}
+
+.step:nth-child(3) .step-number {
+    background-color: #8e24aa;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+}
